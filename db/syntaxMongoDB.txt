@@ -1,0 +1,3 @@
+https://mongoosejs.com/docs/api/mongoose.html
+
+https://mongoosejs.com/docs/api/model.html
