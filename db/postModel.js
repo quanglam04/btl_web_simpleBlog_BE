@@ -9,6 +9,10 @@ const PostSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide a title!"],
   },
+  author: {
+    type: String,
+    required: [true, "Please provide a author!"],
+  },
   description: {
     type: String,
     required: [true, "Please provide a description!"],
