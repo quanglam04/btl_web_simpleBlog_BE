@@ -10,9 +10,10 @@ routerUser.post("/login", async (request, response) => {
     password: request.body.password,
   });
   if (user) {
-    response.status(200);
+    response.status(200).send(user);
+    console.log("User found: ", user);
   } else {
-    response.status(400);
+    response.status(400).send({ error: "Invalid username or password" });
   }
 });
 
